@@ -7,6 +7,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   </head>
   <body>
     <nav id="desktop-nav">
@@ -38,12 +39,11 @@
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img style="border-radius: 50%; width: 275px;"src="./assets/about-pic1.png" alt="Ibrahim profile picture" />
+        <img src="./assets/about-pic1.png" alt="Ibrahim profile picture" style="border-radius: 50%; width: 400px;" />
       </div>
       <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
+        <p class="section__text__p1">Hello, I am <span id="element"></span></p>
         <h1 class="title">Ibrahim Quasim</h1>
-        <p class="section__text__p2">A.I Enthusiast | SWE Fellow @ Headstarter</p>
         <div class="btn-container">
           <button
             class="btn btn-color-2"
@@ -122,6 +122,8 @@
         onclick="location.href='./#experience'"
       />
     </section>
+    <script src="script.js"></script>
+
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
@@ -376,8 +378,5 @@
         </div>
       </nav>
     </footer>
-    <script src="script.js"></script>
   </body>
 </html>
-
-
