@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
@@ -22,7 +21,6 @@
       </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">Ibrahim Quasim</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -71,56 +69,77 @@
         </div>
       </div>
     </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            width="30px"
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-            style="border-radius: 5%; width: 400px;"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>Intern <br />Exploring Fintech / AI / Software</p>
+    <section class="section portfolio" id="portfolio" aria-label="portfolio">
+      <div class="container">
+  
+        <p class="section-subtitle">Portfolio</p>
+  
+        <h2 class="h2 section-title">Projects</h2>
+  
+        <ul class="has-scrollbar">
+  
+          <li class="scrollbar-item">
+            <div class="card">
+  
+              <figure class="card-banner img-holder" style="--width: 600; --height: 675;">
+                <img src="./assets/project 02.png" width="600" height="675" loading="lazy" alt="Project 01" class="img-cover">
+              </figure>
+  
+              <a href="#" class="card-content">
+  
+                <ion-icon name="arrow-forward-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
+  
+                <h3 class="h3 card-title">Project 01</h3>
+  
+                <p class="card-text">Github</p>
+  
+              </a>
+  
             </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Economics, Maths, Chemistry<br />A Levels</p>
+          </li>
+  
+          <li class="scrollbar-item">
+            <div class="card">
+  
+              <figure class="card-banner img-holder" style="--width: 600; --height: 675;">
+                <img src="./assets/project1.png" width="600" height="675" loading="lazy" alt="Project 02" class="img-cover">
+              </figure>
+  
+              <a href="#" class="card-content">
+  
+                <ion-icon name="arrow-forward-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
+  
+                <h3 class="h3 card-title">Project 02</h3>
+  
+                <p class="card-text">Youtube</p>
+  
+              </a>
+  
             </div>
-          </div>
-          <div class="text-container">
-            <p style="text-align: center; font-size: larger;">
-              Studying Harvards CS50 Python & working towards attaining Python institutes PCEP / PCAP Certification.
-              
-              Currently enrolled in @Headstarter AI SWE Fellowship.
-              Passionate about all things AI.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
+          </li>
+  
+          <li class="scrollbar-item">
+            <div class="card">
+  
+              <figure class="card-banner img-holder" style="--width: 600; --height: 675;">
+                <img src="./assets/project-3.png" width="600" height="675" loading="lazy" alt="Project 03" class="img-cover">
+              </figure>
+  
+              <a href="#" class="card-content">
+  
+                <ion-icon name="arrow-forward-outline" aria-hidden="true" role="img" class="md hydrated"></ion-icon>
+  
+                <h3 class="h3 card-title">Project 03</h3>
+  
+                <p class="card-text">Github</p>
+  
+              </a>
+  
+            </div>
+          </li>
+  
+          <li class="scrollbar-item">
+           
     </section>
     <script src="script.js"></script>
 
@@ -258,92 +277,7 @@
         onclick="location.href='./#projects'"
       />
     </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https:/github.com/iqq17'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https:/github.com/iqq17'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https:/github.com/iqq17'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https:/github.com/iqq17'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https:/github.com/iqq17'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https:/github.com/iqq17'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
+    
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
