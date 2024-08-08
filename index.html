@@ -7,10 +7,15 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
   </head>
   <body>
+    <button class="toggle-button" id="dark-mode-toggle">
+      <div id="myIcon">
+        <i class="uil uil-sun"></i>
+      </div> </button>
+    Dark Mode
     <nav id="desktop-nav">
-      <div class="logo">John Doe</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -20,8 +25,10 @@
         </ul>
       </div>
     </nav>
+  
+  
     <nav id="hamburger-nav">
-      <div class="logo">John Doe</div>
+      <div class="logo">Basil Skaria</div>
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
@@ -36,21 +43,23 @@
         </div>
       </div>
     </nav>
-    <section id="profile">
+  
+    <section id="profile" >
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+        <img src="./assets/profile-pic.png" alt="Basil Skaria profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">John Doe</h1>
-        <p class="section__text__p2">Frontend Developer</p>
+        <h1 class="title"id="element"></h1>
+        <p class="section__text__p2">Software Engineer</p>
         <div class="btn-container">
+          <a href="https://drive.google.com/file/d/1nYbi4x52udUFBzAxEEOFlDOgC9ejbJXS/view?usp=sharing">
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
           >
-            Download CV
+           Download CV
           </button>
+        </a>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contact Info
           </button>
@@ -60,28 +69,22 @@
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://linkedin.com/'"
+            onclick="location.href='https://www.linkedin.com/in/basil-skaria-635062252/'"
           />
           <img
             src="./assets/github.png"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/'"
+            onclick="location.href='https://github.com/basilskar'"
           />
         </div>
       </div>
     </section>
-    <section id="about">
+  
+    <section id="about" >
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
         <div class="about-details-container">
           <div class="about-containers">
             <div class="details-container">
@@ -91,7 +94,7 @@
                 class="icon"
               />
               <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
+              <p>Worked as Event Lead for biosphere Club</p>
             </div>
             <div class="details-container">
               <img
@@ -100,18 +103,14 @@
                 class="icon"
               />
               <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+              <p>Btech in Computer Science CGPA:9.06 <br/> Class 12th with 95.6% percentage <br/> Class 10th with 95.2%percentage</p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
-            </p>
+             I’m a Computer Science student at VIT University, Chennai, with a passion for web development and software engineering. Currently, I am actively involved in various tech clubs and projects, including the Linux Club and the Biosphere Club at VIT Chennai. My recent project, an Environment Monitoring System, showcases my skills in JavaScript, Firebase, and more. I thrive in collaborative environments and am always eager to learn and take on new challenges. Open to opportunities in web development, React development, and software engineering roles.
+             
+             </p>
           </div>
         </div>
       </div>
@@ -122,7 +121,7 @@
         onclick="location.href='./#experience'"
       />
     </section>
-    <section id="experience">
+    <section id="experience" >
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
       <div class="experience-details-container">
@@ -159,8 +158,8 @@
                   class="icon"
                 />
                 <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
+                  <h3>Tailwind CSS</h3>
+                  <p>Begineer</p>
                 </div>
               </article>
               <article>
@@ -171,7 +170,7 @@
                 />
                 <div>
                   <h3>JavaScript</h3>
-                  <p>Basic</p>
+                  <p>Intermediate</p>
                 </div>
               </article>
               <article>
@@ -181,7 +180,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>TypeScript</h3>
+                  <h3>React Js</h3>
                   <p>Basic</p>
                 </div>
               </article>
@@ -193,13 +192,13 @@
                 />
                 <div>
                   <h3>Material UI</h3>
-                  <p>Intermediate</p>
+                  <p>Begineer</p>
                 </div>
               </article>
             </div>
           </div>
           <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
+            <h2 class="experience-sub-title">Software Engineering</h2>
             <div class="article-container">
               <article>
                 <img
@@ -208,8 +207,8 @@
                   class="icon"
                 />
                 <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
+                  <h3>SQL</h3>
+                  <p>Experienced</p>
                 </div>
               </article>
               <article>
@@ -219,7 +218,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Node JS</h3>
+                  <h3>Data Structure and Algorithms</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
@@ -230,7 +229,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>Express JS</h3>
+                  <h3>C++</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
@@ -256,7 +255,8 @@
         onclick="location.href='./#projects'"
       />
     </section>
-    <section id="projects">
+
+    <section id="projects" >
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
@@ -264,22 +264,22 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-1.png"
+                src="./assets/project1.png"
                 alt="Project 1"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
+            <h2 class="experience-sub-title project-title">Weather Monitoring System</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/Basilskar/WEATHERAPP'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://airqualitybbs.vercel.app/'"
               >
                 Live Demo
               </button>
@@ -288,50 +288,28 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-2.png"
+                src="./assets/project2.png"
                 alt="Project 2"
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <h2 class="experience-sub-title project-title">Portfolio Resume</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/Basilskar/my_portfolio'"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://portfoliobasil.vercel.app/'"
               >
                 Live Demo
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
+          
           </div>
         </div>
       </div>
@@ -342,17 +320,18 @@
         onclick="location.href='./#contact'"
       />
     </section>
-    <section id="contact">
+    
+    <section id="contact"  class="hidden">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
-        <div class="contact-info-container">
+        <div class="contact-info-container"id="em">
           <img
             src="./assets/email.png"
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:examplemail@gmail.com">Example@gmail.com</a></p>
+          <p><a href="mailto:basil.skaria2022@vitstudent.ac.in">basil.skaria2022@vitstudent.ac.in</a></p>
         </div>
         <div class="contact-info-container">
           <img
@@ -360,7 +339,7 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com/in/basil-skaria-635062252/">LinkedIn</a></p>
         </div>
       </div>
     </section>
@@ -375,8 +354,13 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2023 John Doe. All Rights Reserved.</p>
+      <p>Copyright &#169; 2024 Basil Skaria. All Rights Reserved.</p>
     </footer>
+    <script src="https://unpkg.com/scrollreveal"></script> /* for scroll animation package */
+      <!-- Include Typed.js (adjust the path) -->
+      <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="script.js"></script>
+   
+
   </body>
 </html>
